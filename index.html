@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularze</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="body">
+    <main class="main">
+      
+
+      <h1>Formularze</h1>
+
+     <form action="https://dev.cotenfrontend.pl" class="form">
+        <p>
+          <label for="firstName">Imię</label>
+          <input
+            class="form__input"
+            placeholder="Wpisz swoje imię"
+            type="text"
+            name="firstName"
+            id="firstName"
+          />
+        </p>
+    </form>
+    
+    <form>
+        <p>
+          <label for="surname">Nazwisko</label>
+          <input
+            class="form__input"
+            placeholder="Wpisz swoje nazwisko"
+            name="surname"
+            id="surname"
+          />
+        </p>
+      </form>
+
+      <fieldset class="form">
+        <legend>Dane adresowe</legend>
+        <p>
+          Miasto
+          <input
+            class="form__input"
+            placeholder="Wpisz swoje miasto"
+            name="city"
+            id="city"
+          />
+
+          <br>
+          Ulica<input
+            class="form__input"
+            placeholder="Wpisz nazwę ulicy"
+            name="street"
+            id="street"
+          />
+        </p>
+      </fieldset>
+
+      <fieldset class="form">
+        <legend>ulubiony kolor</legend>
+        <p>
+          <input type="radio" name="adres" id="adres1" />czarny<br />
+          <input type="radio" name="adres" id="adres2" />biały
+        </p>
+      </fieldset>
+
+      <p>
+        <label
+          ><input
+            name="zgoda na przetwarzanie danych"
+            type="checkbox"
+            value="Zgoda"
+          />
+          Zgadzam się !
+        </label>
+      </p>
+
+      <fieldset class="form">
+        <legend>Ulubiony sport</legend>
+        <p>
+          <label for="firstName">Narty</label>
+          <input type="radio" name="firstName" id="firstName1" />
+        </p>
+        <p>
+          <label for="firstName">Tenis</label>
+          <input type="radio" name="firstName" id="firstName2" />
+        </p>
+        <p>
+          <label for="firstName">Pływanie</label>
+          <input type="radio" name="firstName" id="firstName3" />
+        </p>
+      </fieldset>
+
+      <form class="form">
+        <p>
+          <label for="wiek">Wiek</label>
+          <input
+            class="form__input"
+            placeholder="Wpisz swoj wiek"
+            type="number"
+            name="wiek"
+            id="wiek"
+          />
+        </p>
+      </form>
+
+      <p>
+        <label for="phonenumber"
+          >Numer telefonu<input
+            class="form"
+            type="tel"
+            name="phonenumber"
+            id="phonenumber"
+            placeholder="Wpisz numer telefonu"
+          />
+        </label>
+      </p>
+
+      <p>
+        <label for="email"
+          >Adres e-mail<input
+            class="form"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Wpisz adres e-mail"
+          />
+        </label>
+      </p>
+
+      <p>
+        <label for="ulubionZespół">Wybierz ulubiony zespół </label>
+        <select class="form" name="ulubionZespół" id="ulubionZespół">
+          <option value="zespół1">Dead Can Dance</option>
+          <option value="zespół2">Radiohead</option>
+          <option value="zespół3">System of a Down</option>
+          <option value="zespół4">Slipknot</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="twojaHistoria">Opisz swoją historię</label>
+
+        <textarea id="twojaHistoria" name="twojaHistoria" class="form">
+  Twoja historia to...
+    </textarea
+        >
+      </p>
+
+      <p><input type="submit" value="wyślij" /></p>
+    
+    </main>
+  </body>
+</html>
