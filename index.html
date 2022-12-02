@@ -62,8 +62,9 @@
       <fieldset class="form">
         <legend>ulubiony kolor</legend>
         <p>
-          <input type="radio" name="adres" id="adres1" />czarny<br />
-          <input type="radio" name="adres" id="adres2" />biały
+          <label class="form"><input type="radio" name="color" value="czarny" id="color" />czarny </label><br />
+          <label class="form"><input type="radio" name="color" value="niebieski" id="color" />niebieski </label><br>
+          <label class="form"><input type="radio" name="color" value="biały" id="color" />biały </label>
         </p>
       </fieldset>
 
@@ -79,18 +80,18 @@
       </p>
 
       <fieldset class="form">
-        <legend>Ulubiony sport</legend>
+        <legend>Ulubiona potrawa</legend>
         <p>
-          <label for="firstName">Narty</label>
-          <input type="radio" name="firstName" id="firstName1" />
+          <label for="potrawa">pizza</label>
+          <input type="radio" name="potrawa" id="potrawa" value="pizza"/>
         </p>
         <p>
-          <label for="firstName">Tenis</label>
-          <input type="radio" name="firstName" id="firstName2" />
+          <label for="potrawa">rosół</label>
+          <input type="radio" name="potrawa" id="potrawa" value="rosół"/>
         </p>
         <p>
-          <label for="firstName">Pływanie</label>
-          <input type="radio" name="firstName" id="firstName3" />
+          <label for="potrawa">kebab</label>
+          <input type="radio" name="potrawa" id="potrawa" value="kebab"/>
         </p>
       </fieldset>
 
@@ -132,12 +133,12 @@
       </p>
 
       <p>
-        <label for="ulubionZespół">Wybierz ulubiony zespół </label>
-        <select class="form" name="ulubionZespół" id="ulubionZespół">
-          <option value="zespół1">Dead Can Dance</option>
-          <option value="zespół2">Radiohead</option>
-          <option value="zespół3">System of a Down</option>
-          <option value="zespół4">Slipknot</option>
+        <label for="ulubionyZespół">Wybierz ulubiony zespół </label>
+        <select class="form" name="ulubionyZespół" id="ulubionyZespół">
+          <option value="Dead Can Dance">Dead Can Dance</option>
+          <option value="Radiohead">Radiohead</option>
+          <option value="System of a Down">System of a Down</option>
+          <option value="Slipknot">Slipknot</option>
         </select>
       </p>
 
@@ -150,6 +151,22 @@
         >
       </p>
 
+<fieldset class="form">
+        <legend>Ulubiony sport</legend>
+        <p>
+          <label for="sport">Narty</label>
+          <input type="radio" name="sport" id="sport" value="narty" />
+        </p>
+        <p>
+          <label for="sport">Tenis</label>
+          <input type="radio" name="sport" id="sport" value="tenis" />
+        </p>
+        <p>
+          <label for="sport">Pływanie</label>
+          <input type="radio" name="sport" id="sport" value="pływanie" />
+        </p>
+      </fieldset>
+      
       <p><input type="submit" value="wyślij" /></p>
     </form>
     </main>
