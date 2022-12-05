@@ -14,10 +14,11 @@
 
       <h1>Formularze</h1>
 
-      <form action="https://dev.cotenfrontend.pl" class="form">
+      <form method="post" action="https://dev.cotenfrontend.pl" class="form">
         <p>
           <label for="firstName">Imię</label>
           <input
+          required
             class="form__input"
             placeholder="Wpisz swoje imię"
             type="text"
@@ -30,6 +31,7 @@
         <p>
           <label for="surname">Nazwisko</label>
           <input
+          
             class="form__input"
             placeholder="Wpisz swoje nazwisko"
             name="surname"
@@ -43,6 +45,7 @@
         <p>
           Miasto
           <input
+          
             class="form__input"
             placeholder="Wpisz swoje miasto"
             name="city"
@@ -51,6 +54,7 @@
 
           <br>
           Ulica<input
+         
             class="form__input"
             placeholder="Wpisz nazwę ulicy"
             name="street"
@@ -166,6 +170,11 @@
           <input type="radio" name="sport" id="sport" value="pływanie" />
         </p>
       </fieldset>
+
+      <p>
+        <label>Kod pocztowy
+        <input name="kodPoczotwy" pattern="[0-9]{2}-[0-9]{3}"/></label>
+      </p>
       
       <p><input type="submit" value="wyślij" /></p>
     </form>
